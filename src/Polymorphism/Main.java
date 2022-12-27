@@ -1,5 +1,5 @@
 package Polymorphism;
-import java.util.Objects;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -44,8 +44,9 @@ public class Main {
         bus1.maxSpeed(); bus2.maxSpeed(); bus3.maxSpeed(); bus4.maxSpeed();
 
         System.out.println();
-        Driver<Car> driver1 = new Driver("Иванов Иван Иванович", "B", 10.5, car1);
-        Driver<Car> driver2 = new Driver("Петров Петр Петрович", "B", 11.0, car2);
+        Driver<Car> driver1 = new Driver<>("Иванов Иван Иванович", "B", 10.5, car1);
+        Driver<Car> driver2 = new Driver<>("Петров Петр Петрович", "B", 11.0, car2);
+
         driver1.start();
         driver2.start();
         driver1.stop();
@@ -54,8 +55,9 @@ public class Main {
         driver2.refuelTheCar();
 
         System.out.println();
-        Driver<Truck> driver3 = new Driver("Сидоров Сидор Сидорович", "C", 12.5, truck1);
-        Driver<Truck> driver4 = new Driver("Андреев Андрей Андреевич", "C", 19.5, truck2);
+        Driver<Truck> driver3 = new Driver<>("Сидоров Сидор Сидорович", "C", 12.5, truck1);
+        Driver<Truck> driver4 = new Driver<>("Андреев Андрей Андреевич", "C", 19.5, truck2);
+
         driver3.start();
         driver4.start();
         driver3.stop();
@@ -64,8 +66,9 @@ public class Main {
         driver4.refuelTheCar();
 
         System.out.println();
-        Driver<Bus> driver5 = new Driver("Васильев Василий Васильевич", "D", 17.5, bus1);
-        Driver<Bus> driver6 = new Driver("Михайлов Михаил Михайлович", "D", 18.5, bus2);
+        Driver<Bus> driver5 = new Driver<>("Васильев Василий Васильевич", "D", 17.5, bus1);
+        Driver<Bus> driver6 = new Driver<>("Михайлов Михаил Михайлович", "D", 18.5, bus2);
+
         driver5.start();
         driver6.start();
         driver5.stop();
