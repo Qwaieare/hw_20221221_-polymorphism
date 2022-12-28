@@ -15,23 +15,25 @@ public class Driver<B extends Transport> {
         this.vehicle = vehicle;
     }
 
+
     public void start() {
-        System.out.println(getFullName() + " начать движение на " + Transport.getBrand() + " " + Transport.getModel());
+        System.out.println(getFullName() + " начать движение на " + getVehicle().getBrand() + " " + getVehicle().getModel());
     }
 
     public void stop() {
-        System.out.println(getFullName() + " остановиться на " + Transport.getBrand() + " " + Transport.getModel());
+        System.out.println(getFullName() + " остановиться на " + getVehicle().getBrand() + " " + getVehicle().getModel());
     }
 
     public void refuelTheCar() {
-        System.out.println(getFullName() + " заправить авто " + Transport.getBrand() + " " + Transport.getModel());
+        System.out.println(getFullName() + " заправить авто " + getVehicle().getBrand() + " " + getVehicle().getModel());
     }
 
     public void drivingTruck() {
         System.out.println("Водитель " + getFullName() +
                 " управляет автомобилем " +
-                Transport.getBrand() + " " +
-                Transport.getModel() + " и будет участвовать в заезде.");
+                getVehicle().getBrand() + " " +
+                getVehicle().getModel() +
+                 " и будет участвовать в заезде.");
     }
 
     public String getDriversLicense() {
