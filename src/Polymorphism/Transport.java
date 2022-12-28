@@ -2,8 +2,8 @@ package Polymorphism;
 
 public abstract class Transport {
 
-    private static String brand; // марка автомобиля
-    private static String model; // модель автомобиля
+    private String brand; // марка автомобиля
+    private String model; // модель автомобиля
 
     private double engineVolume; // объем двигателя в литрах
 
@@ -25,20 +25,20 @@ public abstract class Transport {
         this.engineVolume = engineVolume;
     }
 
-    public static String getBrand() {
+    public String getBrand() {
         return brand;
     }
 
-    public static void setBrand(String brand) {
-        Transport.brand = brand;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    public static String getModel() {
+    public String getModel() {
         return model;
     }
 
-    public static void setModel(String model) {
-        Transport.model = model;
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public double getEngineVolume() {

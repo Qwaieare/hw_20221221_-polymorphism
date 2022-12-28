@@ -60,6 +60,7 @@ public class Main {
 
         driver3.start();
         driver4.start();
+
         driver3.stop();
         driver4.stop();
         driver3.refuelTheCar();
@@ -79,6 +80,10 @@ public class Main {
         System.out.println();
         driver1.drivingTruck();
         driver2.drivingTruck();
+        driver3.drivingTruck();
+        driver4.drivingTruck();
+        driver5.drivingTruck();
+        driver6.drivingTruck();
 
-}
+    }
 }
